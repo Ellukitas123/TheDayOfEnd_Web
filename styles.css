@@ -1,0 +1,260 @@
+/*reseteo de todo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/*Fondo y letras*/
+body {
+    background: #000000; /*Fondo*/
+    color: #ffffff;/*letras*/
+    background-color: #a5a3a9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23d5d1db' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*links*/
+a{
+    color: #ffffff;
+    text-decoration: none;/*No subrayado*/
+}
+
+ul{
+    list-style: none;
+}
+
+.titulo {
+    font-size: 35px;
+}
+
+.titulo:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container h5 {
+    font-size: 25px;
+}
+
+/*navigation*/
+.nav-main {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20spx;
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+/* Nav Left*/
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 35px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*Showcase*/
+
+hr{
+    height: 5px;
+    margin: 10px;
+    background: #ffffff;
+}
+.showcase {
+    width: 100%;
+    height: 600px;
+    background: url(./img/dia_noche.jpg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.showcase h1{
+    font-size: 75px;
+    padding-bottom: 150px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    margin: 10px;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;
+}
+
+.sectit {
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Cards*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.cards img {
+    width: 100%;
+    height: 200px;
+}
+
+.cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cards a {
+    background: #000000;
+    padding: 10px 0;
+    border: 1px solid #ffffff;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cards a:hover{
+    text-decoration: underline;
+    opacity: .8;
+}
+
+/*cards banner 2*/
+
+.cards-banner-two {
+    width: 100%;
+    height: 350px;
+    background: url(./img/banner2.jpg) no-repeat center/cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cards-banner-two .content {
+    width: 50%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+.cards-banner-two p,
+.cards-banner-two h2 {
+    margin: 10px 0px 20px;
+}
+
+/*social*/
+
+.social {
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/*footer-links*/
+
+.footer-links {
+    background: #2f3640;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 35px 0;
+}
+
+.footer-links a:hover {
+    font-size: 17.5px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.5;
+}
+
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 15px;
+    padding: 20 px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*Noticias*/
+
+.titnot {
+    font-size: 50px;
+    text-align: center;
+}
+
+.imgnot {
+    width: 1235px;
+    height: 450px;
+    align-items: center;
+}
+
+.desnot {
+    font-size: 25px;
+}
